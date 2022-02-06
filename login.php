@@ -21,8 +21,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- <link rel="stylesheet" href="../css/normalize.css" type="text/css"> -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="../css/stylecustom.css" type="text/css">
+    <link rel="stylesheet" href="css\bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css\stylecustom.css" type="text/css">
     <script type="text/javascript" lang="javascript" src="../js/custom.js"></script>
 
     
@@ -31,7 +31,7 @@
 <body>
 
 <main>
-    <form name = "form1" method = "get" action = "login.html">
+    <form name = "form1" method = "get" action = "Connection\funcoes.php">
         <table border="0.5px" style="border-radius: 2rem; padding:5px" >
             <tr>
                 <td class="linhas">
@@ -70,7 +70,11 @@
 
     </div>
     <div>
-        <a href="../Connection/funcoes.php"></a>
+        
+        <?php
+        require_once 'Connection\funcoes.php';
+        ?>
+    
     </div>
     
 </main>

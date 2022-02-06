@@ -1,0 +1,76 @@
+.linhas {
+
+    background-color: #9eaf36;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    align-self: auto;
+    border-radius: 50px;
+    font-size: 1rem;
+
+
+
+}
+
+input{
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+}
+
+table{
+
+vertical-align: bottom;
+
+
+}
+
+
+main {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+form {
+    margin-top: 25%;
+}
+
+form label {
+
+}
+
+form input {
+    display: center;
+
+}
+
+body{
+
+    background-image: url(../images/loginpanel.jpg);
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: cover
+
+ 
+}
+
+.Usuario{
+    background-color: #dddfca;
+    font: italic;
+}
+
+
+.botoes{
+background-color: rgba(255, 255, 255, 0.788);
+border-radius: 30px;
+margin: 10px;
+
+}
