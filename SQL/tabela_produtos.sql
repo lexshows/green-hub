@@ -5,3 +5,8 @@ localizcao VARCHAR(30) NOT NULL,
 preco VARCHAR(50),
 reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 )
+
+
+
+SELECT * FROM usuarios WHERE usuario = 'lex' and senha = md5('e10adc3949ba59abbe56e057f20f883e'); 
+

@@ -3,33 +3,20 @@
 #variaveis do banco de dados
 $db = 'logins';
 $usuario = 'root';
-$password = '';
+$passworddb = '';
 $host = 'localhost';
 
 
 #Defines
-define('HOST', $db);
+define('HOST', $host);
 define('USUARIO', $usuario);
-define('password', $password);
+define('password', $passworddb);
+define('db', $db);
 
+$conexao = mysqli_connect(HOST, USUARIO, password, db) or die ('Não foi possível conectar');
 
+// if ($conexao->connect_error) {
+//      die("Connection failed: " . $conn->connect_error);
+//    }
+//    echo "Connected successfully";
 
-#
-if(empty($_POST['userlogin'])) || empty($_POST['senha']){
-     header('Location: login.php');
-     exit();
-
-
-}
-
-$userlogin = mysqli_real_escape_string($_POST['userlogin']);
-$userpasswrod = mysqli_real_escape_string($_POST['userpassword']);
-
-
-
-
-
-
-
-
-?>

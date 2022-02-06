@@ -1,86 +1,39 @@
-<!-- 
-    Criado por Alex Andrade
-    Source:
-    Função: Tela de Login
-    Data: 02/02/2022
-
--->
+<?php 
+session_start();
+include('Connection\conexao.php');
 
 
-
-<!DOCTYPE html>
-
-<html lang="en">
-
-<head>
+//anti ataque SQL Injection
+if(empty($_POST['userlogin']) || empty($_POST['userpassword'])){
+     header('Location: ./home.php');
+     exit();
 
 
-    
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- <link rel="stylesheet" href="../css/normalize.css" type="text/css"> -->
-    <link rel="stylesheet" href="css\bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="css\stylecustom.css" type="text/css">
-    <script type="text/javascript" lang="javascript" src="../js/custom.js"></script>
+}
 
-    
-</head>
+$userlogin = mysqli_real_escape_string($conexao, $_POST['userlogin']);
+$userpassword = mysqli_real_escape_string($conexao, $_POST['userpassword']);
 
-<body>
+#query db - login
 
-<main>
-    <form name = "form1" method = "get" action = "Connection\funcoes.php">
-        <table border="0.5px" style="border-radius: 2rem; padding:5px" >
-            <tr>
-                <td class="linhas">
-                    User:
-                </td>
-                <td class="linhas">
-                    <input class="Usuario" type="text" name="Username" id="" autofocus>
-                </td>
-            </tr>
-            <tr>
-                <td class="linhas">
-                    Password:
-                </td>
-                <td class="linhas">
-                    <input class="Usuario" type="password" name="password" id="">
-                </td>
-            </tr>
+$query = "SELECT userbd from usuarios where userbd = '$userlogin' and senhabd = '$userpassword';";
 
-  
+$result = mysqli_query($conexao, $query);
+
+$row = mysqli_num_rows($result);
+
+
+if($row == 1) {
+	$_SESSION['userlogin'] = $userlogin;
+	header('Location: ./painel.php');
+	exit();
+} else {
+	$_SESSION['nao_autenticado'] = true;
+	header('Location: ./home.php');
+	exit();
+}
 
 
 
 
-
-
-
-        </table>
-    </form>
-    <div class="botoes">
-        
-
-        <input class="btn btn-success" type="submit" value="Login" name="btnenviar" style="padding: 20px; display: inline-block;">
-        <input class="btn btn-warning" type="button" value="Reset Password" style="display: inline-block;">
-        
-
-
-    </div>
-    <div>
-        
-        <?php
-        require_once 'Connection\funcoes.php';
-        ?>
-    
-    </div>
-    
-</main>
-
-
-</body>
-
-
-</html>
+?>
