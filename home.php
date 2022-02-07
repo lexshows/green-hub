@@ -48,19 +48,11 @@
                     <input class="passwordlogin" type="password" name="userpassword" id="">
                 </td>
             </tr>
-            <input class="btn btn-success" type="submit" value="Login" name="btnenviar" style="display: inline-block;">
-  
-
-
-
-
-
-
-
+            <input class="btn btn-success" type="submit" value="Login" name="btnenviar" style="display: inline-block;"> 
         </table>
     </form>
     <div class="botoes">
-        
+    
 
 
         <!-- <input class="btn btn-warning" type="button" value="Reset Password" style="display: inline-block;"> -->
