@@ -1,7 +1,7 @@
 .linhas {
 
     background-color: #9eaf36;
-    text-align: center;
+    
     padding: 5px;
     font-family: 'Courier New', Courier, monospace;
     align-self: auto;
@@ -13,10 +13,7 @@
 }
 
 input{
-    margin-top: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 10px;
+
     border-radius: 5px;
 
 }
@@ -30,7 +27,7 @@ vertical-align: bottom;
 
 
 main {
-    text-align: center;
+    text-align: right;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -71,6 +68,6 @@ body{
 .botoes{
 background-color: rgba(255, 255, 255, 0.788);
 
-margin: 20px;
+
 
 }

@@ -15,7 +15,7 @@
 <head>
 
 
-    
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,49 +24,60 @@
     <link rel="stylesheet" href="css\stylecustom.css" type="text/css">
 
 
-    
+
 </head>
 
 <body>
 
-<main>
-    <form name = "form1" method = "POST" action = "./login.php">
-        <table border="0.5px" style="border-radius: 2rem; padding:5px" >
-            <tr>
-                <td class="linhas">
-                    User:
-                </td>
-                <td class="linhas">
-                    <input class="userlogin" type="text" name="userlogin" id="" autofocus>
-                </td>
-            </tr>
-            <tr>
-                <td class="linhas">
+    <main>
+        <form name="form1" method="POST" action="./login.php">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            User:
+                        </div>
+                        <div class="col">
+
+                            <input class="userlogin" type="text" name="userlogin" id="" autofocus>
+                        </div>
+                    </div>
+                    <div class="row">
+                    <div class="col">
                     Password:
-                </td>
-                <td class="linhas">
-                    <input class="passwordlogin" type="password" name="userpassword" id="">
-                </td>
-            </tr>
-            <input class="btn btn-success" type="submit" value="Login" name="btnenviar" style="display: inline-block;"> 
-        </table>
-    </form>
-    <div class="botoes">
-    
+                        </div>
+                        <div class="col">
+                            
+                            <input class="passwordlogin" type="password" name="userpassword" id="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input class="btn btn-success" type="submit" value="Login" name="btnenviar"
+                                style="text-align: center">
+                        </div>
+
+                    </div>
+                </div>
 
 
-        <!-- <input class="btn btn-warning" type="button" value="Reset Password" style="display: inline-block;"> -->
-        
+        </form>
+        <div class="botoes">
 
 
-    </div>
-    <div>
-        
 
-    
-    </div>
-    
-</main>
+            <!-- <input class="btn btn-warning" type="button" value="Reset Password" style="display: inline-block;"> -->
+
+
+
+        </div>
+        <div>
+
+
+
+        </div>
+
+    </main>
 
 
 

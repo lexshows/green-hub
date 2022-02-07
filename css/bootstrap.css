@@ -680,6 +680,7 @@ progress {
 
 .col {
   flex: 1 0 0%;
+  margin-top: 2px;
 }
 
 .row-cols-auto > * {
