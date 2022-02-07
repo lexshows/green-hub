@@ -30,7 +30,7 @@
 <body>
 
 <main>
-    <form name = "form1" method = "POST" action = "login.php">
+    <form name = "form1" method = "POST" action = "./login.php">
         <table border="0.5px" style="border-radius: 2rem; padding:5px" >
             <tr>
                 <td class="linhas">

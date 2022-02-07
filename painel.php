@@ -1,4 +1,6 @@
 <?php
 
+include('verifica-login.php');
 
-echo 'teste';
+?>
+
