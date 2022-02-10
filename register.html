@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../green-hub/css/register.css">
+    <link rel="stylesheet" href="../green-hub/css/bootstrap.css">
+    <link rel="javascript" href="../green-hub/js/bootstrap.js">
+    
+
+    <title>Document</title>
+
+
+</head>
+<body class="registerbody">
+    <div class="card" id="card">
+        <div class="card-body" id="body-card">
+            <form class="form-horizontal" id="form1" action="" method="post">
+                <fieldset style="margin: 10px;">
+                    <div id="legend">
+                        <div class="card-title" id="card-title">
+                            Formulário de Registro
+                        </div>
+                    </div>
+                    
+                    <!-- usuario -->
+                    <div class="control-group">
+                    <label class="control-label" for="newuser" style="margin-top: 10px; font-weight: 525;"> 
+                        Username:
+                    </label>
+                    <div class="controls">
+                        <input type="text" id="newuser" class="form-control" name="newuser" placeholder="New User Name">
+                        <small class="help-block" style="font-style: italic;">
+                            Username can contain any letters or numbers, without spaces
+                        </small>
+                    </div>
+                    </div>
+                    <!-- E-mail -->
+                    <div class="control-group">
+                        <label class="control-label" for="new-e-mail" style="margin-top: 10px; font-weight: 525;">
+                            E-mail:
+                        </label>
+                        <div class="controls">
+                            <input type="email" id="new-e-mail" class="form-control" name="new-e-mail" placeholder="your-mail@...">
+                            <small class="help-block" style="font-style: italic;">
+                                Please provide your E-mail
+                            </small>
+                        </div>
+                    </div>
+                    <!-- Password -->
+                    <div class="control-group">
+                        <label class="control-label" for="NewPassword" style="margin-top: 10px; font-weight: 525;">
+                            Password:
+            
+                        </label>
+                        <div class="controls">
+                            <input type="password" id="newpassword" class="form-control" name="newpassword" placeholder="*********">
+                            <small class="help-block" style="font-style: italic;">
+                                Password should be at least 6 characters <br>
+                                Special characters @!#$%?
+                            </small>
+                        </div>
+                                  
+                    </div>
+                    <!-- Repeat Password -->
+                    <div class="control-group">
+                        <label for="repeatpassword" style="margin-top: 10px; font-weight: 525;">
+                            Repeat Password
+                        </label>
+                        <div class="controls">
+                            <input type="password" id="repeatpassword" class="form-control" name="repeatpassword" placeholder="*********">
+                            <small class="help-block" style="font-style: italic;">
+                                Please confirm password
+                            </small>
+            
+                        </div>
+                    </div>
+                    <!-- Botão Enviar -->
+                    <div class="controls" style="margin-top: 10px; padding: 1.2rem 1rem 1.2rem 1rem; text-align: center;">
+                        <button class="btn btn-success">Send</button>
+                    </div>
+            
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

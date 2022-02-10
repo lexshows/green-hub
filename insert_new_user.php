@@ -7,5 +7,3 @@ $newname = $_POST['Nome'];
 $newemail = $_POST['E-mail'];
 $newpassword = md5($_POST['Password']);
 
-
-
