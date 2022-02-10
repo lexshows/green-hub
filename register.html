@@ -26,37 +26,37 @@
                     
                     <!-- usuario -->
                     <div class="control-group">
-                    <label class="control-label" for="newuser" style="margin-top: 10px; font-weight: 525;"> 
+                    <label class="control-label" for="newuser"> 
                         Username:
                     </label>
                     <div class="controls">
-                        <input type="text" id="newuser" class="form-control" name="newuser" placeholder="New User Name">
-                        <small class="help-block" style="font-style: italic;">
+                        <input type="text" id="newuser" class="form-control" name="newuser" placeholder="New User Name" >
+                        <small class="help-block">
                             Username can contain any letters or numbers, without spaces
                         </small>
                     </div>
                     </div>
                     <!-- E-mail -->
                     <div class="control-group">
-                        <label class="control-label" for="new-e-mail" style="margin-top: 10px; font-weight: 525;">
+                        <label class="control-label" for="new-e-mail">
                             E-mail:
                         </label>
                         <div class="controls">
                             <input type="email" id="new-e-mail" class="form-control" name="new-e-mail" placeholder="your-mail@...">
-                            <small class="help-block" style="font-style: italic;">
+                            <small class="help-block">
                                 Please provide your E-mail
                             </small>
                         </div>
                     </div>
                     <!-- Password -->
                     <div class="control-group">
-                        <label class="control-label" for="NewPassword" style="margin-top: 10px; font-weight: 525;">
+                        <label class="control-label" for="NewPassword">
                             Password:
             
                         </label>
                         <div class="controls">
                             <input type="password" id="newpassword" class="form-control" name="newpassword" placeholder="*********">
-                            <small class="help-block" style="font-style: italic;">
+                            <small class="help-block">
                                 Password should be at least 6 characters <br>
                                 Special characters @!#$%?
                             </small>
@@ -65,7 +65,7 @@
                     </div>
                     <!-- Repeat Password -->
                     <div class="control-group">
-                        <label for="repeatpassword" style="margin-top: 10px; font-weight: 525;">
+                        <label class="control-label" for="repeatpassword">
                             Repeat Password
                         </label>
                         <div class="controls">
@@ -77,8 +77,8 @@
                         </div>
                     </div>
                     <!-- Botão Enviar -->
-                    <div class="controls" style="margin-top: 10px; padding: 1.2rem 1rem 1.2rem 1rem; text-align: center;">
-                        <button class="btn btn-success">Send</button>
+                    <div class="controls" id="btn-enviar-div" style="">
+                        <button class="btn btn-success" id="btn-enviar">Send</button>
                     </div>
             
                 </fieldset>
