@@ -27,6 +27,53 @@
 }
 
 #card-title{
-    font-size: 25px; 
+    font-size: 30px; 
+    text-align: center;
+    font-weight: 500;
+}
+
+.help-block{
+    font-style: italic;
+    font-size: 12px;
+
+}
+
+.control-label{
+    margin-top: 10px; 
+    font-weight: 525;
+}
+
+.control-group{
+    margin-top: 10px; 
+    
+}
+
+#btn-enviar{
+    margin-top: 10px; 
+    width: 10rem;
     text-align: center;
 }
+
+#btn-enviar-div{
+ text-align: center;
+}
+
+#newuser{
+    background-image: url(../images/account_circle_black_24dp.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 0.5vw;
+    text-indent: 2em;
+    
+    
+}
+
+#newpassword{
+    
+    background-image: url(../images/vpn_key_black_24dp.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 0.5vw;
+    text-indent: 2.0em;
+}
+
