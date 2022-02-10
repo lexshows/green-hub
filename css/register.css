@@ -77,3 +77,34 @@
     text-indent: 2.0em;
 }
 
+#new-email{
+
+    background-image: url(../images/email_black_24dp.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 0.5vw;
+    text-indent: 2.0em;
+
+ 
+
+
+}
+
+#repeatnewpassword{
+    background-image: url(../images/vpn_key_black_24dp.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 0.5vw;
+    text-indent: 2.0em;
+
+}
+
+#btn-enviar{
+
+    background-image: url(../images/how_to_reg_black_24dp.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 0.5vw;
+    text-align: center;
+    
+}
